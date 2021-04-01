@@ -224,6 +224,7 @@ body p {
     justify-content: center;
     align-items: center;
     margin: auto;
+    padding-top: 5rem;
 }
 
 .bio-content-center h1,
