@@ -2,7 +2,7 @@
 <html lang="en-us">
 
 <head>
-    <title>Portfolio - Style Guide</title>
+    <title>William You</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Boostrap -->
@@ -15,31 +15,26 @@
 
     <!-- CSS & JS -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="script" href="scripts/scripts.js">
+    <link rel="script" href="js/scripts.js">
 
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">STYLE GUIDE</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">WY</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#design-ethos">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#design-ethos">About me</a>
                 </li>
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Sections
-            </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Typography</a></li>
-                        <li><a class="dropdown-item" href="#">Color Palette</a></li>
-                        <li><a class="dropdown-item" href="#">Interface</a></li>
-                        <li><a class="dropdown-item" href="#">Templates</a></li>
-                    </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="#workListing">My Works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacts">Contacts</a>
                 </li>
             </ul>
         </div>
@@ -47,66 +42,115 @@
 </nav>
 
 <body>
-    <section id="design-ethos" class="intro bg-black content-section">
-        <div class="container-fluid">
-            <h1 class="section-title"> My Design Ethos </h1>
-            <h3 class="section-content design-ethos"> Hello, I'm William. </h3>
-            <h3 class="section-content design-ethos"> In design, I aim for Minimalism and Efficiency. </h3>
-            <p class="section-content design-ethos"> Moving towards the future, designs has never been more closely connect with new technologies. As a SFU SIAT student, I've been steadily growing as both a visual designer, as well as an interactive desinger. </p>
-            <p class="section-content desgin-ethos"> By combining these techniques and knowledge, I wish to probe into product designing that incoorporates the latest and top-of-the-line technologies. </p>
-        </div>
-    </section>
+    <div class="border-container">
+        <section id="design-ethos" class="intro bg-grey content-section welcome-section">
+            <div class="container-fluid">
+                <h1 class=""> William You </h1>
+                <h2 class=""> Interactive Designer. </h2>
+            </div>
+        </section>
 
-    <section class="typography bg-grey content-section">
-        <div class="container-fluid">
-            <h1 class="section-title"> Typography </h1>
 
-            <div class="typography-grid">
+        <section class="biography bg-black content-section">
+            <div class="bio-template">
+                <div class="bio-poster">
+                    <h1 class="section-title">
+                        About me
+                    </h1>
 
-                <div class="typography-grid-sm typography-column-1">
-                    <h1 class="typography-content">Heading One</h1>
-                    <h2 class="typography-content">Heading Two</h1>
-                        <h3 class="typography-content">Heading Three</h1>
-                            <h4 class="typography-content">Heading Four</h1>
-                                <p class="typography-content">Body</h1>
+                    <div class="poster-center">
+                        <span class="dot pp-placeholder"></span>
+
+                        <div class="bio-text">
+                            <h2 class="section-content design-ethos bio-intro"> Hello, I'm William. </h2>
+                            <h3 class="section-content design-ethos"> In design, I aim for Minimalism and Efficiency. </h3>
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="typography-grid-sm typography-column-2">
-                    <p class="typography-content">Playfair Display , Serif , Medium , 44px</h4>
-                        <p class="typography-content">Playfair Display , Serif, Normal , 38px</h4>
-                            <p class="typography-content">Roboto Slab, Serif , Normal , 25px</h4>
-                                <p class="typography-content"> Source Sans Pro, Sans-serif , Normal , 20px</h4>
-                                    <p class="typography-content">Source Sans Pro, Sans-serif , Light , 20px</h4>
+                <div class="collapse width" id="bioCollapse">
+                    <div class="bio-content">
+                        <div class="bio-content-center">
+                            <h1 class="bio-text-padding">My Design Ethos</h1>
+                            <p class="bio-text-padding section-content design-ethos"> Moving towards the future, designs has never been more closely connect with new technologies. As a SFU SIAT student, I've been steadily growing as both a visual designer, as well as an interactive desinger. </p>
+                            <h2 class="bio-text-padding section-content desgin-ethos"> By combining these techniques and knowledge, I wish to probe into product designing that incoorporates the latest and top-of-the-line technologies. </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="expand-button" class="bio-expand" data-bs-toggle="collapse" role="button" href="#bioCollapse" aria-expanded="false" aria-controls="collapseExample" onclick="collapseButton()">
+                    <span></span>
+                </button>
+            </div>
+        </section>
+
+        <section class="bg-black content-section" id="workListing">
+
+            <div class="work-listing">
+                <div class="listing">
+                    <h1 class="listing-title" id="works">Works</h1>
+
+                    <div class="listing-details">
+                        <a class="listing-item listing-item-1" href="#works">
+                           IAT 233: Pavilion
+                        </a>
+                        <h2>/</h2>
+                        <a class="listing-item listing-item-2" href="#works">
+                            IAT 267: Beer Bong Extreme
+                        </a>
+                    </div>
+                </div>
+
+                <div class="collapse width" id="work1Collapse">
+                    <div class="process-container">
+                        hei
+                    </div>
+                </div>
+
+                <button id="expand-button" class="work-display work-display-1" data-bs-toggle="collapse" href="#work1Collapse" aria-expanded="false" aria-controls="collapseExample" onclick="collapseButton()">
+                    <h1 class="display-title">Pavilion</h1>
+                </button>
+
+                <div class="collapse width" id="work2Collapse">
+                    <div class="process-container">
+                        hei
+                    </div>
+                </div>
+
+                <button id="expand-button" class="work-display work-display-2" data-bs-toggle="collapse" href="#work2Collapse" aria-expanded="false" aria-controls="collapseExample" onclick="collapseButton()">
+                    <h1 class="display-title">Beer Pong Extreme</h1>
+                </button>
+            </div>
+        </section>
+
+        <section class="contact-me bg-grey content-section" id="contacts">
+
+
+            <div class="contact-template">
+                <h1 class="contact-title">Contacts</h1>
+
+                <div class="contact-methods">
+
+                    <div class="contact-method-1">
+                        <span class="dot pp-placeholder"></span>
+                        <h3 class="method-description">Email</h3>
+                        <p class="method-description-2">w_4807@hotmail.com</p>
+                    </div>
+
+                    <div class="contact-method-2">
+                        <span class="dot pp-placeholder"></span>
+                        <h3 class="method-description">Discord</h3>
+                        <p class="method-description-2">Won Jae#6117</p>
+                    </div>
+
+
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <section class="color-palette bg-black content-section">
-        <div class="container-fluid">
-            <h1 class="section-title"> Colours </h1>
-
-            <div class="color-list">
-                <div class="color-item color-1">
-                    <h2>RGB (19, 19, 19)</h2>
-                </div>
-                <div class="color-item color-2">
-                    <h2>RGB (104, 104, 104);</h2>
-                </div>
-                <div class="color-item color-3">
-                    <h2>RGB (212, 212, 212);</h2>
-                </div>
-                <div class="color-item color-4">
-                    <h2>RBG (240, 240, 240)</h2>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bio-template bg-grey content-section">
-
-
-    </section>
 </body>
 
 <footer>
