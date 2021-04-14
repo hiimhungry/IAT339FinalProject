@@ -672,4 +672,13 @@
         .skill-item {
             width: 100%;
         }
+        .bio-skills {
+            align-items: center;
+        }
+        .bio-ethos {
+            align-items: center;
+        }
+        .bio-50 {
+            width: 70%;
+        }
     }
