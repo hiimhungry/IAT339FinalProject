@@ -43,9 +43,9 @@
 
 <body>
     <div class="border-container">
-        <section id="design-ethos" class="intro bg-grey content-section welcome-section">
+        <section id="design-ethos" class="intro bg-black content-section welcome-section">
             <div class="container-fluid">
-                <h1 class=""> William You </h1>
+                <h1 style="font-size:80px" class="name-title"> William You </h1>
                 <h2 class=""> Interactive Designer. </h2>
             </div>
         </section>
@@ -57,32 +57,46 @@
                     <h1 class="section-title">
                         About me
                     </h1>
+                    <div class="bio-align">
+                        <div class="poster-center">
+                            <span class="dot pp-placeholder"></span>
 
-                    <div class="poster-center">
-                        <span class="dot pp-placeholder"></span>
-
-                        <div class="bio-text">
-                            <h2 class="section-content design-ethos bio-intro"> Hello, I'm William. </h2>
-                            <h3 class="section-content design-ethos"> In design, I aim for Minimalism and Efficiency. </h3>
+                            <div class="bio-text">
+                                <h2 class="section-content design-ethos bio-intro"> Hello, I'm William. </h2>
+                                <h3 class="section-content design-ethos"> In aim to design products in a minimalistic and efficient manner, integrated with the latest technologies.</h3>
+                            </div>
                         </div>
 
-                    </div>
-
-                </div>
-
-                <div class="collapse width" id="bioCollapse">
-                    <div class="bio-content">
-                        <div class="bio-content-center">
+                        <div class="bio-content">
                             <h1 class="bio-text-padding">My Design Ethos</h1>
-                            <p class="bio-text-padding section-content design-ethos"> Moving towards the future, designs has never been more closely connect with new technologies. As a SFU SIAT student, I've been steadily growing as both a visual designer, as well as an interactive desinger. </p>
-                            <h2 class="bio-text-padding section-content desgin-ethos"> By combining these techniques and knowledge, I wish to probe into product designing that incoorporates the latest and top-of-the-line technologies. </h2>
+                            <p class="bio-text-padding section-content design-ethos"> As a SIAT student, I've learned to critically analyze and solve design problems, and learned the skills to apply it real world designs through different mediums.</p>
+                            <p class="bio-text-padding section-content desgin-ethos"> With understanding and using modern technology, I strive to create and design products that is both innovative, and intuitive.</p>
+
+                            <h1 class="skill-text">Skills and Softwares</h1>
+                            <h3 class="skill-additional-text">I've worked with various programs and become proficient with the following.</h2>
+                                <div class="skill-list">
+                                    <div class="skill-item">
+                                        <h3 class="skill-type">Coding</h3>
+                                        <p class="skill-description">Python, C, C++, Java, HTML/CSS</p>
+                                    </div>
+                                    <div class="skill-item">
+                                        <h3 class="skill-type">Design</h3>
+                                        <p class="skill-description">Adobe Illustrator, Photoshop, After Effects</p>
+                                    </div>
+                                    <div class="skill-item">
+                                        <h3 class="skill-type">CAD</h3>
+                                        <p class="skill-description">Solid Works, Rhino 6, Fusion 360</p>
+                                    </div>
+                                </div>
                         </div>
+
+
+
+
                     </div>
+
                 </div>
 
-                <button id="expand-button" class="bio-expand" data-bs-toggle="collapse" role="button" href="#bioCollapse" aria-expanded="false" aria-controls="collapseExample" onclick="collapseButton()">
-                    <span></span>
-                </button>
             </div>
         </section>
 
@@ -147,7 +161,20 @@
 
 
                 </div>
+
+                <form>
+                    <input name="name" type="text" class="feedback-input" placeholder="Name" />
+                    <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                    <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                    <input type="submit" value="Leave a Message!" />
+                </form>
+
             </div>
+
+
+
+
+
         </section>
     </div>
 
