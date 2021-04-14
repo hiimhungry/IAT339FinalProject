@@ -2,7 +2,7 @@
     
     .bg-grey {
         display: block;
-        background: rgb(88, 88, 88);
+        background: rgb(68, 68, 68);
         height: 100%;
     }
     
@@ -12,8 +12,6 @@
         height: 100%;
     }
     /* Layouts */
-    
-    .body {}
     
     .border-container {
         display: flex;
@@ -26,24 +24,24 @@
         border-bottom: 3px solid white;
     }
     
-    .content-section {}
-    
     .container-fluid {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
     
     .welcome-section {
-        padding-left: 3rem;
         padding-top: 5rem;
-        padding-bottom: 3rem;
+        padding-bottom: 10rem;
     }
     
     .welcome-section h1,
     h2 {
         height: 100%;
         margin: auto;
+    }
+    
+    .landing-intro {
+        justify-content: center;
+        text-align: center;
     }
     /* FONTS */
     
@@ -292,8 +290,8 @@
     }
     
     .dot {
-        height: 250px;
-        width: 250px;
+        height: 50px;
+        width: 50px;
         background-color: rgb(255, 255, 255);
         border-radius: 50%;
         display: inline-block;
@@ -301,20 +299,17 @@
     
     .poster-center {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         margin-top: 5rem;
         padding-bottom: 5rem;
         margin: auto;
-        height: 100%;
         width: 80%;
     }
     
     .poster-content {
-        width: 50%;
-        margin-left: 30px;
-        margin-right: 30px;
+        width: 60%;
     }
     
     .bio-text {
@@ -328,12 +323,6 @@
     
     .bio-text {
         padding-bottom: 0;
-    }
-    
-    .bio-align {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
     }
     /* Skills */
     
@@ -407,10 +396,6 @@
         }
     }
     
-    .work-listing button {
-        height: 100vh;
-    }
-    
     .listing {
         display: flex;
         flex-direction: column;
@@ -419,8 +404,12 @@
         align-items: center;
         padding-bottom: 15rem;
         height: 100vh;
-        width: 60%;
+        width: 40%;
         background: rgb(85, 85, 85);
+    }
+    
+    .listing-title {
+        justify-self: center;
     }
     
     .listing-details {
@@ -429,6 +418,47 @@
         justify-content: center;
         align-items: center;
         text-decoration: none;
+    }
+    /*Work*/
+    
+    .project-button {
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        background-color: rgb(85, 85, 85);
+        width: 100%;
+    }
+    
+    .project-button:hover {
+        background-color: rgb(58, 58, 58);
+        transition: 2s;
+    }
+    
+    .project-process {
+        display: flex;
+        overflow: hidden;
+        height: 100vh;
+        position: relative;
+        width: 60%;
+        backface-visibility: hidden;
+        will-change: overflow;
+    }
+    
+    .scrolling-section {
+        overflow: auto;
+        height: auto;
+        padding: .5rem;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: none;
+    }
+    
+    #projectPavilion,
+    #projectBeerPong {
+        display: none;
+    }
+    
+    .scrolling-section .scrolling-section::-webkit-scrollbar {
+        display: none;
     }
     /* work section tabs*/
     
@@ -455,6 +485,12 @@
     
     .work-display:hover {
         background: rgb(65, 65, 65);
+    }
+    /*Side Scrolling*/
+    
+    .card {
+        flex: 2 0 auto;
+        margin-top: 3rem;
     }
     /* contact-template */
     
@@ -504,10 +540,6 @@
     }
     
     @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-    body {
-        background: rgb(30, 30, 40);
-    }
-    
     form {
         max-width: 420px;
         margin: 50px auto;
@@ -567,6 +599,12 @@
         height: 50px;
     }
     /* media query */
+    
+    @media only screen and (min-width: 800px) {
+        .poster-content {
+            margin-top: 50px;
+        }
+    }
     
     @media only screen and (max-width: 800px) {
         .bio-template {
@@ -660,9 +698,6 @@
             right: -20px;
             transition: 0.5s;
         }
-        .section-title {
-            padding-left: 3rem;
-        }
         .skill-list {
             flex-direction: column;
             align-items: flex-start;
@@ -680,5 +715,10 @@
         }
         .bio-50 {
             width: 70%;
+        }
+        .poster-content {
+            width: 70%;
+            margin-left: 30px;
+            margin-right: 30px;
         }
     }

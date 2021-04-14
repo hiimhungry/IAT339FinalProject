@@ -15,7 +15,7 @@
 
     <!-- CSS & JS -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="script" href="js/scripts.js">
+    <script type="text/javascript" src="js/scripts.js"></script>
 
 </head>
 
@@ -44,9 +44,9 @@
 <body>
     <div class="border-container">
         <section id="design-ethos" class="intro bg-black content-section welcome-section">
-            <div class="container-fluid">
+            <div class="container-fluid landing-intro">
                 <h1 style="font-size:80px" class="name-title"> William You </h1>
-                <h2 class=""> Interactive Designer. </h2>
+                <h2 class=""> Interactive Product Designer. </h2>
             </div>
         </section>
 
@@ -63,15 +63,9 @@
 
                             <div class="bio-text poster-content">
                                 <h2 class="section-content design-ethos bio-intro"> Hello, I'm William. </h2>
-                                <h3 class="section-content design-ethos"> In aim to design products in a minimalistic and efficient manner, integrated with the latest technologies.</h3>
+                                <h3 class="section-content design-ethos"> My goal is to design products in a minimalistic and efficient manner, integrated with the latest technologies which can be beneficial or enjoyed by a broad audience.</h3>
                             </div>
                         </div>
-
-
-
-
-
-
                     </div>
 
                     <div class="bio-content">
@@ -112,43 +106,62 @@
             </div>
         </section>
 
-        <section class="bg-black content-section" id="workListing">
+        <section class="bg-grey content-section" id="workListing">
 
             <div class="work-listing">
                 <div class="listing">
-                    <h1 class="listing-title" id="works">Works</h1>
+                    <h1 class="listing-title section-title" id="works">Works</h1>
 
-                    <div class="listing-details">
-                        <a class="listing-item listing-item-1" href="#works">
-                           IAT 233: Pavilion
-                        </a>
-                        <h2>/</h2>
-                        <a class="listing-item listing-item-2" href="#works">
-                            IAT 267: Beer Bong Extreme
-                        </a>
-                    </div>
+
+                    <a class="project-button project-button-1" onClick="openPavilion()">
+                        <h2>Pavilion</h2>
+                    </a>
+
+                    <a class="project-button project-button-2" onClick="openBeerPong()">
+                        <h2>Beer Pong Extreme</h2>
+                    </a>
                 </div>
 
-                <div class="collapse width" id="work1Collapse">
-                    <div class="process-container">
-                        hei
+                <div class="project-process">
+                    <div id="projectPavilion" class="scrolling-section scrolling-section-1">
+                        This is my DIV1 element.
+                    </div>
+
+                    <div id="projectBeerPong" class="scrolling-section scrolling-section-2">
+                        This is my DIV2element.
                     </div>
                 </div>
-
-                <button id="expand-button" class="work-display work-display-1" data-bs-toggle="collapse" href="#work1Collapse" aria-expanded="false" aria-controls="collapseExample" onclick="collapseButton()">
-                    <h1 class="display-title">Pavilion</h1>
-                </button>
-
-                <div class="collapse width" id="work2Collapse">
-                    <div class="process-container">
-                        hei
-                    </div>
-                </div>
-
-                <button id="expand-button" class="work-display work-display-2" data-bs-toggle="collapse" href="#work2Collapse" aria-expanded="false" aria-controls="collapseExample" onclick="collapseButton()">
-                    <h1 class="display-title">Beer Pong Extreme</h1>
-                </button>
             </div>
+
+            <script>
+                function openPavilion() {
+                    var x = document.getElementById("projectPavilion");
+                    var y = document.getElementById("projectBeerPong");
+
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                        y.style.display = "none";
+                    } else {
+                        x.style.display = "none";
+                    }
+
+
+
+                }
+
+                function openBeerPong() {
+                    var x = document.getElementById("projectBeerPong");
+                    var y = document.getElementById("projectPavilion");
+
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                        y.style.display = "none";
+                    } else {
+                        x.style.display = "none";
+                    }
+
+                }
+            </script>
         </section>
 
         <section class="contact-me bg-grey content-section" id="contacts">
@@ -167,8 +180,8 @@
 
                     <div class="contact-method-2">
                         <a class="contact-logo"><img src="img/discord-logo.png" alt="discord-icon" style="width:100px;height:100px"></a>
-                        <h3 class="method-description">Discord</h3>
-                        <p class="method-description-2">Won Jae#6117</p>
+                        <h3 class="method-description ">Discord</h3>
+                        <p class="method-description-2 ">Won Jae#6117</p>
                     </div>
 
 
@@ -189,6 +202,7 @@
 
         </section>
     </div>
+
 
 </body>
 
