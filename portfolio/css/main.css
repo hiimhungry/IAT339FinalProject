@@ -729,6 +729,10 @@ p.copyright {
     bottom: 0;
 }
 
+.footer-content {
+    padding-bottom: 5rem;
+}
+
 
 /* media query */
 
