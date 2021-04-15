@@ -253,6 +253,8 @@ body p {
 
 .bio-skills {
     align-items: flex-end;
+    margin-top: 15rem;
+    padding-bottom: 14vh;
 }
 
 .bio-container {
@@ -291,6 +293,10 @@ body p {
 
 .skill-icons {
     margin-bottom: 2rem;
+}
+
+.sm-ex-padding {
+    margin-top: 2rem;
 }
 
 button {
@@ -413,6 +419,7 @@ button {
 
 .project-title {
     margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 
@@ -587,8 +594,9 @@ a:hover:after {
 }
 
 .close-button-icon {
-    margin-left: 65%;
     position: sticky;
+    width: 100%;
+    margin: auto;
 }
 
 .project-images {
