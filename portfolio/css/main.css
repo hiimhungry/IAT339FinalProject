@@ -13,6 +13,20 @@
 }
 
 
+/* Animations*/
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+
 /* Sections */
 
 .bg-grey {
@@ -39,6 +53,10 @@
     margin-bottom: 2.5rem;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid white;
+    opacity: 0;
+    animation: transitionIn 0.75s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
 }
 
 .container-fluid {
@@ -243,6 +261,10 @@ body p {
     width: 100%;
     height: 100%;
     margin-bottom: 40px;
+    opacity: 0;
+    animation: transitionIn 0.75s;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
 }
 
 .bio-50 {
@@ -340,6 +362,10 @@ button {
 .bio-text {
     margin-top: 100px;
     margin-bottom: 100px;
+    opacity: 0;
+    animation: transitionIn 0.75s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 .design-ethos {
@@ -373,6 +399,10 @@ button {
     width: 100%;
     align-content: center;
     margin: auto;
+    opacity: 0;
+    animation: transitionIn 0.75s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
 }
 
 .project-title {
