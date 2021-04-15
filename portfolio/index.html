@@ -55,11 +55,10 @@
             <div class="bio-template">
                 <div class="bio-poster">
                     <h1 class="section-title">
-                        About me
+                        About
                     </h1>
                     <div class="bio-align">
                         <div class="poster-center">
-                            <span class="dot pp-placeholder poster-content"></span>
 
                             <div class="bio-text poster-content">
                                 <h2 class="section-content design-ethos bio-intro"> Hello, I'm William. </h2>
@@ -113,23 +112,106 @@
                     <h1 class="listing-title section-title" id="works">Works</h1>
 
 
-                    <a class="project-button project-button-1" onClick="openPavilion()">
-                        <h2>Pavilion</h2>
+                    <a id="pavilionButton" class="project-button project-button-1" onClick="openPavilion()">
+                        <h2 id="pavilionTitle">Pavilion</h2>
                     </a>
 
-                    <a class="project-button project-button-2" onClick="openBeerPong()">
-                        <h2>Beer Pong Extreme</h2>
+                    <a id="beerPongButton" class="project-button project-button-2" onClick="openBeerPong()">
+                        <h2 id="beerpongTitle">Beer Pong Extreme</h2>
                     </a>
                 </div>
 
-                <div class="project-process">
-                    <div id="projectPavilion" class="scrolling-section scrolling-section-1">
-                        This is my DIV1 element.
+                <div id="projectProcess" class="project-process">
+                    <div id="projectPavilion" class="scrolling-section scrolling-section-1" style="display:none">
+                        <div class="project-content">
+                            <div class="project-container">
+                                <h1 class="project-title">IAT 233: Pavilion</h1>
+                                <h3 class="project-disclaimer"> This work was done as a group, featuring Adrian Soliman and Ally Woroniuk. All credits are shared between the team.</h3>
+                                <h2 class="project-steps">Researching</h2>
+                                <p class="project-step-detail">Our team started by researching other existing pavilions, considering their material, construction methods, design patterns, and flow of the structures. In this project, we brought inspiration from “Bamboo Pavilion” designed
+                                    by Zuo studios, located in Huludun Park in Taiwan.</p>
+                                <img class="project-images" src="img/pavilion_1.png">
+
+                                <h2 class="project-steps">Ideation & Sketching</h2>
+                                <p class="project-step-detail">Through inspiration and iteration of sketches, our team built a collection of possible ideas and selected with discussion.</p>
+                                <img class="project-images" src="img/pavilion_2.jpg">
+
+                                <h2 class="project-steps">Prototyping</h2>
+                                <p class="project-step-detail">Then, from the ideas, using parametric methods, created possible structures iterated over peer critiques.</p>
+                                <img class="project-images" src="img/pavilion_3.jpg">
+
+                                <h2 class="project-steps">Iteration</h2>
+                                <p class="project-step-detail">Then we experimented with different values in parametric functions, and methods of weaving the material.</p>
+                                <img class="project-images" src="img/pavilion_4.jpg">
+
+                                <h2 class="project-steps">Polishing</h2>
+                                <p class="project-step-detail">With in-class critiques, we constructed a pavilion and a mock-environment around it, and tried different material and flows. The pavilion was placed on a platform to distinctly separate it from the walking space and sculpture
+                                    showcase space.</p>
+                                <img class="project-images" src="img/pavilion_5.png">
+                                <img class="project-images last-image" src="img/pavilion_6.jpg">
+                            </div>
+                        </div>
                     </div>
 
-                    <div id="projectBeerPong" class="scrolling-section scrolling-section-2">
-                        This is my DIV2element.
+                    <div id="projectBeerPong" class="scrolling-section scrolling-section-2" style="display:none">
+                        <div class="project-content">
+                            <div class="project-container">
+                                <h1 class="project-title">IAT 267: Beer Pong Extreme</h1>
+                                <h3 class="project-disclaimer"> This work was done as a group, featuring Sahil Sran, Amarthya Kaushik Suresh, and Chamira Perera. All credits are shared between the team.</h3>
+                                <img class="project-images" src="img/BPE_1.png" style="width: 50% ; height: 50%">
+                                <h2 class="project-steps">Overview</h2>
+                                <p class="project-step-detail">
+                                    Our project is a tabletop game inspired by the party game Beer Pong. The game requires two players to stand at opposing ends of the table. Each person takes turns throwing a ping pong ball into the opposing player’s cups. Whenever a player lands a ball
+                                    in a cup, that cup gets eliminated. This is indicated by two LEDs that change from green to red. This continues on until one player loses all their cups. To reset the game, players can remove the balls from the cups
+                                    and tap a touch sensor. There is also a temperature sensor on the side to measure how cold the player’s drink is.
+                                </p>
+
+                                <h2 class="project-steps">Work Description</h2>
+                                <p class="project-step-detail">When creating the project, we all collectively agreed that we wanted to do some sort of game involving the sensor interaction. There wasn’t very much brainstorming in this process as we stuck with the first idea that we
+                                    landed on, which was beer pong. Our initial concept was to have 3 modes of interaction with the sensors. A touch sensor would be used to change between game modes, a temperature sensor would be intended to read the
+                                    drink temperature, and 3 Infrared distance sensors would be set up along each of the cups to detect when a ball lands.
+                                </p>
+                                <img class="project-images" src="img/BPE_2.png">
+
+                                <p class="project-step-detail">However, in the prototype, we repurposed the touch sensor to reset the game, and we used Ultrasonic distance sensors instead of Infrared for better detection. Also, our original plan was to have either 6 cups on one end
+                                    of the table, or sets of three on both ends of the table, but due to a lack of sensors at the time, and lack of ports on a single arduino RedBoard, we decided to just have 3 cups on one end to test it’s functionality.
+                                    We constructed a holder for the three cups to sit in, which also helped hold the sensors and 1 LEDs in place, with a small hatch to hold the arduino red board and breadboard. We made the addition of the temperature
+                                    sensor to add another mode of interaction for those playing the game.
+                                </p>
+
+                                <img class="project-images" src="img/BPE_3.png">
+
+                                <h2 class="project-steps">Project Structure & Components</h2>
+                                <p class="project-step-detail">For the prototype, we built a casing out of foam board to hold the 3 cups, as well as the 3 ultrasonic sensors and sets of LEDs for each cup. The ultrasonic sensors were used to detect ball movement whenever a ball should
+                                    make it into a cup; each sensor was set up to it’s own respective cup. The touch sensor was used to reset the game when one player loses all their cups. In other words, it changes the lights from red back to green.
+                                    Each ultrasonic sensor was paired with 1 red and green LED. The temperature sensor was used as an additional interaction where players could place their drinks on top of the sensor to determine how cold their drink
+                                    is.
+                                </p>
+
+                                <img class="project-images" src="img/BPE_4.png">
+
+                                <h2 class="project-steps">Prototype & Challenges</h2>
+                                <p class="project-step-detail">One of the main challenges we had was cable management. With so many sensors connected to one breadboard and with nearly all the ports filled up on the Arduino RedBoard, it became difficult to tell which connection led
+                                    where. The space these cables took up also proved to be a challenge for hiding the components inside the casing we created for the cups. Unfortunately, for the prototype, we were unable to hide the wires adequately,
+                                    but this would have been worked around for the final product.</p>
+                                <img class="project-images" src="img/BPE_5.png">
+                                <p class="project-step-detail last-image">Another challenge we had was getting the ultrasonic distance sensors to detect when the ball entered the cup. The reason this was challenging was because once the ball got in the cup it would be out of the sensors range.
+                                    We solved the problem by having our code change the LED green to red as soon as the sensor notices a change in range. This way the ball wouldn’t have to constantly be in the sensor’s range to be able to notice the ball
+                                    landed in the cup. These were a couple of problems we faced with our prototype.
+                                </p>
+
+                            </div>
+                        </div>
                     </div>
+                </div>
+
+
+            </div>
+            <div id="closeButton" class="close-button" style="display:none">
+                <div class="close-button-container">
+                    <svg href="#workListing" onClick="closeAll()" xmlns="http://www.w3.org/2000/svg" width="120px" height="120px" fill="currentColor" class="bi bi-caret-up-fill close-button-icon" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                  </svg>
                 </div>
             </div>
 
@@ -137,12 +219,21 @@
                 function openPavilion() {
                     var x = document.getElementById("projectPavilion");
                     var y = document.getElementById("projectBeerPong");
+                    var z = document.getElementById("closeButton");
+                    var w = document.getElementById("pavilionTitle")
+                    var j = document.getElementById("beerpongTitle")
 
                     if (x.style.display === "none") {
                         x.style.display = "block";
                         y.style.display = "none";
+                        z.style.display = "block";
+                        w.style.opacity = "100%";
+                        j.style.opacity = "5%";
+
                     } else {
                         x.style.display = "none";
+                        z.style.display = "none";
+                        w.style.opacity = "5%";
                     }
 
 
@@ -152,12 +243,37 @@
                 function openBeerPong() {
                     var x = document.getElementById("projectBeerPong");
                     var y = document.getElementById("projectPavilion");
+                    var z = document.getElementById("closeButton");
+                    var j = document.getElementById("pavilionTitle")
+                    var w = document.getElementById("beerpongTitle")
 
                     if (x.style.display === "none") {
                         x.style.display = "block";
                         y.style.display = "none";
+                        z.style.display = "block";
+                        w.style.opacity = "100%";
+                        j.style.opacity = "5%";
                     } else {
                         x.style.display = "none";
+                        z.style.display = "none";
+                        w.style.opacity = "5%";
+                    }
+
+                }
+
+                function closeAll() {
+                    var y = document.getElementById("projectBeerPong");
+                    var x = document.getElementById("projectPavilion");
+                    var z = document.getElementById("closeButton");
+                    var w = document.getElementById("pavilionTitle")
+                    var j = document.getElementById("beerpongTitle")
+
+                    if (x.style.display === "block" || y.style.display === "block") {
+                        x.style.display = "none";
+                        y.style.display = "none";
+                        z.style.display = "none";
+                        w.style.opacity = "5%";
+                        j.style.opacity = "5%";
                     }
 
                 }
