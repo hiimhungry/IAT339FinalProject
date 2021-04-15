@@ -281,10 +281,16 @@ body p {
     margin: auto;
 }
 
-.bio-content-center h1,
-h3,
-p {
+.skill-additional-text {
     margin-bottom: 3rem;
+}
+
+.skill-type {
+    margin-bottom: 2rem;
+}
+
+.skill-icons {
+    margin-bottom: 2rem;
 }
 
 button {
